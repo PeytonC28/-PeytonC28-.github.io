@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>A Taste of Tuscany</title>
+    <link rel="stylesheet" href="w16_Tuscany.css">
+</head>
+
+<body class="tuscany">
+
+<article>
+
+    <h2 style="text-align: center;">
+        A Taste of Tuscany
+    </h2>
+
+    <h3 style="text-align: center;">
+        Italian Restaurant
+    </h3>
+
+    <p style="text-align: center;">
+        234 Arezzo Avenue
+    </p>
+
+    <p style="text-align: center;">
+        Sherwood Park
+    </p>
+
+    <p style="text-align: center;">
+        <img src="https://images.unsplash.com/photo-1593548615309-5a45c504f994?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fA%3D%3D"
+             width="300"
+             height="400">
+    </p>
+
+    <div style="text-align: center;">
+        <ul style="display: inline-block; text-align: left; padding: 0;">
+            <li>Fine Italian Dining</li>
+            <li><a href="w14_specials.html">Daily Specials</a></li>
+            <li>Licensed</li>
+            <li>Banquet Room</li>
+            <li>Open Daily Until 11 pm</li>
+            <li>Eat in, Take out, Delivery</li>
+            <li>Call 780.555.1234</li>
+        </ul>
+    </div>
+</article>
+
+
+    <div style="text-align:center;">
+    <button id="openBtn">Today's Special</button>
+    </div>
+
+    <div class="popup" id="popup">
+
+
+<article>
+
+    <h2 style="text-align: center;">
+            Today's Special
+    </h2>
+
+    <h3 style="text-align: center; font-weight: normal;">
+            Valigette (Beef Rolls)
+    </h3>
+
+    <h4 style="text-align: center; font-weight: normal;">
+            $14.95
+    </h4>
+
+    <p style="text-align: center;">
+        <img src="https://images.unsplash.com/photo-1683989416034-a324e2ec17f5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                 width="300"
+                 height="200">
+    </p>
+
+    <p style="text-align: center; margin-bottom: 8px;">
+        Includes any of:
+    </p>
+
+    <div style="text-align: center;">
+        <ol style="display: inline-block; text-align: left; padding: 0; margin-top: 8px;">
+            <li>Pasta e Fagioli</li>
+            <li>Ravioli Nudi</li>
+            <li>Fettunta</li>
+            <li>Crostini con Salsiccia</li>
+            <li>Ribollita</li>
+        </ol>
+    </div>
+
+    <div style="text-align:center;">
+        <button id="closeBtn">Close</button>
+    </div>
+
+</article>
+    
+    </div>
+
+<script>
+
+const popup = document.getElementById("popup");
+const openBtn = document.getElementById("openBtn");
+const closeBtn = document.getElementById("closeBtn");
+
+openBtn.addEventListener("click", function () {
+    popup.style.display = "block";
+});
+
+closeBtn.addEventListener("click", function () {
+    popup.style.display = "none";
+});
+
+</script>
+
+</body>
+</html>
